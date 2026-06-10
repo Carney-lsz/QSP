@@ -1,0 +1,1 @@
+python mitigation.py > ./logs/JBShield-M.log

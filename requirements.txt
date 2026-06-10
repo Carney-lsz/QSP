@@ -1,0 +1,12 @@
+accelerate
+fschat
+nltk
+numpy
+pandas
+protobuf
+sentencepiece
+scikit-learn
+torch
+torchvision
+tqdm
+transformers

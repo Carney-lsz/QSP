@@ -1,0 +1,8 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.05it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.16s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.91s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  2.31s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  2.00s/it]
+
+[OK] Wrote:
+  - per-prompt JSONL: interpret_results_projection/qwen2.5-7b_ijp.jsonl
+  - summary JSON   : interpret_results_projection/qwen2.5-7b_ijp_summary.json
+  - global overlap(Qs,Qj) = 0.0607
+[W126 12:28:48.976905239 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

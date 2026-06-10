@@ -1,0 +1,9 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:32<00:32, 32.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:42<00:00, 19.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:42<00:00, 21.43s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[OK] Wrote:
+  - per-prompt JSONL: interpret_results_projection/vicuna-7b_i-gcg.jsonl
+  - summary JSON   : interpret_results_projection/vicuna-7b_i-gcg_summary.json
+  - global overlap(Qs,Qj) = 0.0159
+[W126 15:56:05.727980432 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

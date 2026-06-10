@@ -1,0 +1,7 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.33s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.33s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.30s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.31s/it]
+
+[OK] Wrote:
+  - per-prompt JSONL: interpret_results_projection/mistral_i-gcg.jsonl
+  - summary JSON   : interpret_results_projection/mistral_i-gcg_summary.json
+  - global overlap(Qs,Qj) = 0.0240

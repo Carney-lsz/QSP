@@ -1,0 +1,9 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.48s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.97s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.20s/it]
+Token indices sequence length is longer than the specified maximum sequence length for this model (4217 > 4096). Running this sequence through the model will result in indexing errors
+
+[OK] Wrote:
+  - per-prompt JSONL: interpret_results_projection/deepseek-7b_puzzler.jsonl
+  - summary JSON   : interpret_results_projection/deepseek-7b_puzzler_summary.json
+  - global overlap(Qs,Qj) = 0.0523
+[W126 01:47:10.407978841 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

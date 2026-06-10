@@ -1,0 +1,31 @@
+
+[Projection-M] Loading model: vicuna-7b
+
+[Projection-M] Running base64 on vicuna-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/base64/vicuna-7b_learned.json
+
+[Projection-M] Running drattack on vicuna-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/drattack/vicuna-7b_learned.json
+
+[Projection-M] Running flip on vicuna-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/flip/vicuna-7b_learned.json
+
+[Projection-M] Running i-gcg on vicuna-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/i-gcg/vicuna-7b_learned.json
+
+[Projection-M] Running ijp on vicuna-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/ijp/vicuna-7b_learned.json
+
+[Projection-M] Running puzzler on vicuna-7b | mode=learned
+Warning: Input length 4710 is greater than model's max position embeddings 4096.
+Warning: Input length 4599 is greater than model's max position embeddings 4096.
+Warning: Input length 4701 is greater than model's max position embeddings 4096.
+Warning: Input length 4286 is greater than model's max position embeddings 4096.
+Warning: Input length 4469 is greater than model's max position embeddings 4096.
+[Projection-M] Saved → data/projection_mitigation/puzzler/vicuna-7b_learned.json
+
+[Projection-M] Running saa on vicuna-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/saa/vicuna-7b_learned.json
+
+[Projection-M] Running zulu on vicuna-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/zulu/vicuna-7b_learned.json

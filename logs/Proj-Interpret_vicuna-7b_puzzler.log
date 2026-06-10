@@ -1,0 +1,10 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.19s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.44s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Token indices sequence length is longer than the specified maximum sequence length for this model (4286 > 4096). Running this sequence through the model will result in indexing errors
+
+[OK] Wrote:
+  - per-prompt JSONL: interpret_results_projection/vicuna-7b_puzzler.jsonl
+  - summary JSON   : interpret_results_projection/vicuna-7b_puzzler_summary.json
+  - global overlap(Qs,Qj) = 0.0765
+[W126 15:56:35.634244132 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

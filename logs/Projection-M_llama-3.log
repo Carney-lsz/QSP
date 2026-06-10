@@ -1,0 +1,26 @@
+
+[Projection-M] Loading model: llama-3
+
+[Projection-M] Running base64 on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/base64/llama-3_learned.json
+
+[Projection-M] Running drattack on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/drattack/llama-3_learned.json
+
+[Projection-M] Running flip on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/flip/llama-3_learned.json
+
+[Projection-M] Running i-gcg on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/i-gcg/llama-3_learned.json
+
+[Projection-M] Running ijp on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/ijp/llama-3_learned.json
+
+[Projection-M] Running puzzler on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/puzzler/llama-3_learned.json
+
+[Projection-M] Running saa on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/saa/llama-3_learned.json
+
+[Projection-M] Running zulu on llama-3 | mode=learned
+[Projection-M] Saved → data/projection_mitigation/zulu/llama-3_learned.json

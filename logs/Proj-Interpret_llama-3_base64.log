@@ -1,0 +1,8 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.53s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.17s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.93s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.52s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]
+
+[OK] Wrote:
+  - per-prompt JSONL: interpret_results_projection/llama-3_base64.jsonl
+  - summary JSON   : interpret_results_projection/llama-3_base64_summary.json
+  - global overlap(Qs,Qj) = 0.0153
+[W126 13:40:58.784930005 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

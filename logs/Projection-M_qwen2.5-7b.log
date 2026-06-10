@@ -1,0 +1,26 @@
+
+[Projection-M] Loading model: qwen2.5-7b
+
+[Projection-M] Running base64 on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/base64/qwen2.5-7b_learned.json
+
+[Projection-M] Running drattack on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/drattack/qwen2.5-7b_learned.json
+
+[Projection-M] Running flip on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/flip/qwen2.5-7b_learned.json
+
+[Projection-M] Running i-gcg on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/i-gcg/qwen2.5-7b_learned.json
+
+[Projection-M] Running ijp on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/ijp/qwen2.5-7b_learned.json
+
+[Projection-M] Running puzzler on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/puzzler/qwen2.5-7b_learned.json
+
+[Projection-M] Running saa on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/saa/qwen2.5-7b_learned.json
+
+[Projection-M] Running zulu on qwen2.5-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/zulu/qwen2.5-7b_learned.json

@@ -1,0 +1,26 @@
+
+[Projection-M] Loading model: mistral
+
+[Projection-M] Running base64 on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/base64/mistral_learned.json
+
+[Projection-M] Running drattack on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/drattack/mistral_learned.json
+
+[Projection-M] Running flip on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/flip/mistral_learned.json
+
+[Projection-M] Running i-gcg on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/i-gcg/mistral_learned.json
+
+[Projection-M] Running ijp on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/ijp/mistral_learned.json
+
+[Projection-M] Running puzzler on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/puzzler/mistral_learned.json
+
+[Projection-M] Running saa on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/saa/mistral_learned.json
+
+[Projection-M] Running zulu on mistral | mode=learned
+[Projection-M] Saved → data/projection_mitigation/zulu/mistral_learned.json

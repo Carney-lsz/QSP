@@ -1,0 +1,74 @@
+[1/7] Get embeddings for calibration prompts...
+  - calibration embeddings for jailbreak=base64
+  - calibration embeddings for jailbreak=drattack
+  - calibration embeddings for jailbreak=flip
+  - calibration embeddings for jailbreak=i-gcg
+  - calibration embeddings for jailbreak=ijp
+  - calibration embeddings for jailbreak=puzzler
+  - calibration embeddings for jailbreak=saa
+  - calibration embeddings for jailbreak=zulu
+[2/7] Get embeddings for test prompts...
+  - test embeddings for jailbreak=base64
+  - test embeddings for jailbreak=drattack
+  - test embeddings for jailbreak=flip
+  - test embeddings for jailbreak=i-gcg
+  - test embeddings for jailbreak=ijp
+  - test embeddings for jailbreak=puzzler
+  - test embeddings for jailbreak=saa
+  - test embeddings for jailbreak=zulu
+[3/7] Build per-layer PCA subspaces (safety + jailbreak)...
+[4/7] Select layers by AUC (energy) and build EVT thresholds...
+  -> safety Top-4 layers = [8, 6, 9, 31] | best AUC=1.0000
+  - jb=base64   Top-4=[4, 5, 6, 12] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.2654
+  - jb=drattack Top-4=[32, 31, 30, 29] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.2843
+  - jb=flip     Top-4=[25, 32, 30, 31] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.2298
+  - jb=i-gcg    Top-4=[28, 26, 27, 25] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.3232
+  - jb=ijp      Top-4=[4, 3, 7, 6] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.5037
+  - jb=puzzler  Top-4=[7, 8, 10, 14] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.1689
+  - jb=saa      Top-4=[25, 26, 27, 32] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.1781
+  - jb=zulu     Top-4=[11, 10, 30, 29] AUC(best)=1.0000 thr_safety(fused)=0.5744 thr_jb(fused)=0.3193
+[5/7] Save artifacts ...
+  -> Saved vectors/thresholds/layers/basis + learned_fusion into: ./vectors/mistral
+[6/7] Sanity evaluation (fusion=top2mean | learned_tune=f1 | learned_recall_min=0.8 | poly=1 | neg_aug=0 | softgate k=1.0)
+      Report: JB-only / OR / AND / SOFTGATE / LEARNED
+  - [JB-only  puzzler] ACC=0.8976 F1=0.3175 (TP=20, FP=86, TN=734, FN=0)
+  - [OR       puzzler] ACC=0.8762 F1=0.2778 (TP=20, FP=104, TN=716, FN=0)
+  - [AND      puzzler] ACC=0.9750 F1=0.0000 (TP=0, FP=1, TN=819, FN=20)
+  - [SOFTGATE puzzler] ACC=0.9750 F1=0.0000 (TP=0, FP=1, TN=819, FN=20)
+  - [LEARNED  puzzler] ACC=0.9952 F1=0.9991 (TP=20, FP=4, TN=816, FN=0)  tau=0.527
+  - [JB-only  saa    ] ACC=0.9640 F1=0.9642 (TP=795, FP=34, TN=786, FN=25)
+  - [OR       saa    ] ACC=0.9524 F1=0.9532 (TP=795, FP=53, TN=767, FN=25)
+  - [AND      saa    ] ACC=0.5000 F1=0.0000 (TP=0, FP=0, TN=820, FN=820)
+  - [SOFTGATE saa    ] ACC=0.5000 F1=0.0000 (TP=0, FP=0, TN=820, FN=820)
+  - [LEARNED  saa    ] ACC=0.9561 F1=0.9541 (TP=748, FP=0, TN=820, FN=72)  tau=0.600
+  - [JB-only  drattack] ACC=0.9687 F1=0.9598 (TP=490, FP=41, TN=779, FN=0)
+  - [OR       drattack] ACC=0.9580 F1=0.9469 (TP=490, FP=55, TN=765, FN=0)
+  - [AND      drattack] ACC=0.6221 F1=0.0000 (TP=0, FP=5, TN=815, FN=490)
+  - [SOFTGATE drattack] ACC=0.6221 F1=0.0000 (TP=0, FP=5, TN=815, FN=490)
+  - [LEARNED  drattack] ACC=0.9924 F1=0.9897 (TP=482, FP=2, TN=818, FN=8)  tau=0.645
+  - [JB-only  ijp    ] ACC=0.9165 F1=0.9188 (TP=775, FP=92, TN=728, FN=45)
+  - [OR       ijp    ] ACC=0.9098 F1=0.9128 (TP=775, FP=103, TN=717, FN=45)
+  - [AND      ijp    ] ACC=0.4951 F1=0.0000 (TP=0, FP=8, TN=812, FN=820)
+  - [SOFTGATE ijp    ] ACC=0.4951 F1=0.0000 (TP=0, FP=8, TN=812, FN=820)
+  - [LEARNED  ijp    ] ACC=0.8787 F1=0.8945 (TP=635, FP=14, TN=806, FN=185)  tau=0.677
+  - [JB-only  base64 ] ACC=0.9354 F1=0.9393 (TP=820, FP=106, TN=714, FN=0)
+  - [OR       base64 ] ACC=0.9238 F1=0.9292 (TP=820, FP=125, TN=695, FN=0)
+  - [AND      base64 ] ACC=0.5000 F1=0.0000 (TP=0, FP=0, TN=820, FN=820)
+  - [SOFTGATE base64 ] ACC=0.5000 F1=0.0000 (TP=0, FP=0, TN=820, FN=820)
+  - [LEARNED  base64 ] ACC=0.9604 F1=0.9610 (TP=801, FP=46, TN=774, FN=19)  tau=0.716
+  - [JB-only  zulu   ] ACC=0.9573 F1=0.9589 (TP=817, FP=67, TN=753, FN=3)
+  - [OR       zulu   ] ACC=0.9476 F1=0.9500 (TP=817, FP=83, TN=737, FN=3)
+  - [AND      zulu   ] ACC=0.4982 F1=0.0000 (TP=0, FP=3, TN=817, FN=820)
+  - [SOFTGATE zulu   ] ACC=0.4982 F1=0.0000 (TP=0, FP=3, TN=817, FN=820)
+  - [LEARNED  zulu   ] ACC=0.9652 F1=0.9647 (TP=779, FP=16, TN=804, FN=41)  tau=0.629
+  - [JB-only  flip   ] ACC=0.9709 F1=0.9639 (TP=520, FP=39, TN=781, FN=0)
+  - [OR       flip   ] ACC=0.9567 F1=0.9472 (TP=520, FP=58, TN=762, FN=0)
+  - [AND      flip   ] ACC=0.6119 F1=0.0000 (TP=0, FP=0, TN=820, FN=520)
+  - [SOFTGATE flip   ] ACC=0.6119 F1=0.0000 (TP=0, FP=0, TN=820, FN=520)
+  - [LEARNED  flip   ] ACC=0.9993 F1=0.9990 (TP=520, FP=1, TN=819, FN=0)  tau=0.518
+  - [JB-only  i-gcg  ] ACC=0.9343 F1=0.9179 (TP=492, FP=60, TN=760, FN=28)
+  - [OR       i-gcg  ] ACC=0.9269 F1=0.9094 (TP=492, FP=70, TN=750, FN=28)
+  - [AND      i-gcg  ] ACC=0.6052 F1=0.0000 (TP=0, FP=9, TN=811, FN=520)
+  - [SOFTGATE i-gcg  ] ACC=0.6052 F1=0.0000 (TP=0, FP=9, TN=811, FN=520)
+  - [LEARNED  i-gcg  ] ACC=0.9590 F1=0.9449 (TP=472, FP=7, TN=813, FN=48)  tau=0.524
+[7/7] Done.

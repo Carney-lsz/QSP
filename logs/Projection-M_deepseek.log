@@ -1,0 +1,31 @@
+
+[Projection-M] Loading model: deepseek-7b
+
+[Projection-M] Running base64 on deepseek-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/base64/deepseek-7b_learned.json
+
+[Projection-M] Running drattack on deepseek-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/drattack/deepseek-7b_learned.json
+
+[Projection-M] Running flip on deepseek-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/flip/deepseek-7b_learned.json
+
+[Projection-M] Running i-gcg on deepseek-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/i-gcg/deepseek-7b_learned.json
+
+[Projection-M] Running ijp on deepseek-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/ijp/deepseek-7b_learned.json
+
+[Projection-M] Running puzzler on deepseek-7b | mode=learned
+Warning: Input length 4624 is greater than model's max position embeddings 4096.
+Warning: Input length 4384 is greater than model's max position embeddings 4096.
+Warning: Input length 4624 is greater than model's max position embeddings 4096.
+Warning: Input length 4217 is greater than model's max position embeddings 4096.
+Warning: Input length 4335 is greater than model's max position embeddings 4096.
+[Projection-M] Saved → data/projection_mitigation/puzzler/deepseek-7b_learned.json
+
+[Projection-M] Running saa on deepseek-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/saa/deepseek-7b_learned.json
+
+[Projection-M] Running zulu on deepseek-7b | mode=learned
+[Projection-M] Saved → data/projection_mitigation/zulu/deepseek-7b_learned.json
